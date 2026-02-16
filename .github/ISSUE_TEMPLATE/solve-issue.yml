@@ -1,0 +1,27 @@
+name: "課題を解く"
+description: "現状と理想のギャップを定義し、タスクに分解する"
+body:
+  - type: textarea
+    id: current
+    attributes:
+      label: "現状"
+      description: "今どうなっているか"
+      placeholder: "○○ができていない"
+    validations:
+      required: true
+  - type: textarea
+    id: ideal
+    attributes:
+      label: "理想の状態"
+      description: "どうなっていれば解決か"
+      placeholder: "○○ができるようになる"
+    validations:
+      required: true
+  - type: textarea
+    id: tasks
+    attributes:
+      label: "タスク"
+      description: "やるべきことを分解する"
+      placeholder: |
+        - [ ] △△する
+        - [ ] □□する
